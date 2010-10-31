@@ -6,8 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "underscore_win32ole"
     gem.summary = %Q{win32ole with underscore methods}
-    gem.description = %Q{win32ole has COM methods. There are UpperCammelCase. Rubyists hate those methods.
-      You can use underscore COM methods when using underscore_win32ole.}
+    gem.description = %Q{win32ole UpperCamelCase method names => underscore methods. for windows. sorry to linux user.}
     gem.email = "toshi.hirooka@gmail.com"
     gem.homepage = "http://github.com/tosik/underscore_win32ole"
     gem.authors = ["Toshiyuki Hirooka"]

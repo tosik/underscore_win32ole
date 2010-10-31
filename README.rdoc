@@ -6,7 +6,10 @@ win32ole UpperCamelCase method names => underscore methods
 
   % gem install underscore_win32ole
 
+code:
+
   require "underscore_win32ole"
+
   excel = WIN32OLE.new('Excel.Application')
   excel.visible = true
   workbook = excel.workbooks.add()
