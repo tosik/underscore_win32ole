@@ -1,6 +1,20 @@
 = underscore_win32ole
 
-Description goes here.
+win32ole UpperCammelCase method names => underscore methods
+
+== Usage
+
+  % gem install underscore_win32ole
+
+  require "underscore_win32ole"
+  excel = WIN32OLE.new('Excel.Application')
+  excel.visible = true
+  workbook = excel.workbooks.add()
+  worksheet = workbook.worksheets(1)
+  worksheet.range('A1:D1').value = ['North','South','East','West']
+  puts worksheet.used_range.rows.extend(Enumerable).map {|row|
+    row.columns.extend(Enumerable).map {|column| column.value }.join(",")
+  }
 
 == Note on Patches/Pull Requests
  
