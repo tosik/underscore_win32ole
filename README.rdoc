@@ -1,6 +1,6 @@
 = underscore_win32ole
 
-win32ole UpperCammelCase method names => underscore methods
+win32ole UpperCamelCase method names => underscore methods
 
 == Usage
 
